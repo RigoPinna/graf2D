@@ -37,15 +37,17 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnCred = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        btnTras = new javax.swing.JButton();
         BtnEsca = new javax.swing.JButton();
         btnRota = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        btnEsc2 = new javax.swing.JButton();
+        btnRota2 = new javax.swing.JButton();
+        btnTras2 = new javax.swing.JButton();
+        btnTras = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -65,7 +67,7 @@ public class Menu extends javax.swing.JFrame {
         btnCred.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnCred.setText("CREDITOS");
         btnCred.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(btnCred, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 170, 40));
+        jPanel1.add(btnCred, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 440, 170, 40));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
@@ -73,26 +75,38 @@ public class Menu extends javax.swing.JFrame {
         jLabel7.setText("Transformaciones Básicas");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 20, 720, -1));
 
-        btnTras.setBackground(new java.awt.Color(102, 255, 102));
-        btnTras.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        btnTras.setText("TRASLACIÓN");
-        btnTras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(btnTras, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 180, 50));
-
-        BtnEsca.setBackground(new java.awt.Color(102, 255, 102));
-        BtnEsca.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        BtnEsca.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        BtnEsca.setForeground(new java.awt.Color(51, 51, 51));
         BtnEsca.setText("ESCALACIÓN");
         BtnEsca.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(BtnEsca, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, 180, 50));
+        jPanel1.add(BtnEsca, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 230, 50));
 
-        btnRota.setBackground(new java.awt.Color(102, 255, 102));
-        btnRota.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnRota.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        btnRota.setForeground(new java.awt.Color(51, 51, 51));
         btnRota.setText("ROTACIÓN");
         btnRota.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(btnRota, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, 180, 50));
+        jPanel1.add(btnRota, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, 230, 50));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/figEd.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, 120, 120));
+        btnEsc2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        btnEsc2.setForeground(new java.awt.Color(51, 51, 51));
+        btnEsc2.setText("Escalacion Sucesiva");
+        jPanel1.add(btnEsc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 230, 50));
+
+        btnRota2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        btnRota2.setForeground(new java.awt.Color(51, 51, 51));
+        btnRota2.setText("Rotación Sucesiva");
+        jPanel1.add(btnRota2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 230, 50));
+
+        btnTras2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        btnTras2.setForeground(new java.awt.Color(51, 51, 51));
+        btnTras2.setText("Traslación Sucesiva");
+        jPanel1.add(btnTras2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 230, 50));
+
+        btnTras.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        btnTras.setForeground(new java.awt.Color(51, 51, 51));
+        btnTras.setText("TRASLACIÓN");
+        btnTras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btnTras, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 230, 50));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -125,7 +139,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,11 +160,13 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton BtnEsca;
     public javax.swing.JButton btnCred;
+    public javax.swing.JButton btnEsc2;
     public javax.swing.JButton btnRota;
+    public javax.swing.JButton btnRota2;
     public javax.swing.JButton btnTras;
+    public javax.swing.JButton btnTras2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
